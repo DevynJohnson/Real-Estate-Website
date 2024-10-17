@@ -1,25 +1,31 @@
-.header {
-    background-color: #e0c173;
-    font-size: xx-large;
+.nav {
+    background-color:#e0c173;
+    color:black;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0 10px 0;
 }
 
-.header .image1 {
-    text-align: left;
+.nav > li {
     display: inline-block;
-   
-
+    padding: 0 25px 0 25px;
+    font-size: 30px;
 }
 
-.header .text {    
-    display: inline-block;
-    font: bold;
-    
-    
+.nav > li > a {
+    text-decoration: none;
+    color: #000000;
 }
 
-.header .image2 {
-    display: inline-block;
-    text-align: right
+.nav > li > a:hover {
+    color: white
 }
+
+.logo1 {
+    text-align: center;
+}
+
+
+
 
 
