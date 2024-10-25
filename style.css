@@ -1,11 +1,15 @@
+.* {
+    font-family: "Poppins", sans-serif;
+}
 .nav {
     background-color:#e0c173;
     color:#000000;
     list-style: none;
     text-align: center;
+    border: 5px solid #000000;
     padding: 15px 0 15px 0;
     position: fixed;
-    margin-top: -10px;
+    margin: -10px;
     width: 100%;
     font-size: 0  
     
