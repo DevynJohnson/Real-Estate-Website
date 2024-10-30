@@ -6,7 +6,7 @@
     color:#000000;
     list-style: none;
     text-align: center;
-    border: 5px solid #000000;
+    border-bottom: 5px solid #000000;
     padding: 2.5px 0 2.5px 0;
     position: fixed;
     margin: -10px;
@@ -56,4 +56,19 @@
 .stagingtips,
 .dog {
     text-align: center;
+}
+
+footer {
+    background-color:#e0c173;
+    color:#000000;
+    list-style: none;
+    text-align: center;
+    border-top: 5px solid #000000;
+    padding: 2.5px 0 2.5px 0;
+    position: fixed;
+    margin: -10px;
+    width: 100%;
+    font-size: 0
+
+    
 }
