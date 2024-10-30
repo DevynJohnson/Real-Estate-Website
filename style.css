@@ -42,6 +42,7 @@
 
 .headshot {
     text-align: center;
+    box-shadow: 20px, 20px, #000000
 }
 
 .aboutme {
@@ -51,14 +52,8 @@
 
 }
 
-.flyer1 {
-    text-align: center;
-}
-
-.stagingtips {
-    text-align: center;
-}
-
+.flyer1,
+.stagingtips,
 .dog {
     text-align: center;
 }
