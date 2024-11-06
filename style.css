@@ -37,6 +37,7 @@
 }
 
 .hero {
+    width: 100%;
     background-image: url(./Images/Key\ in\ door.jpg);
     background-size: cover;
     background-position: center;
@@ -113,7 +114,6 @@ footer ul li {
         position: fixed;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         background-color: #e0c173;
         width: 100%;
         justify-content: center;
