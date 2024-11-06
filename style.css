@@ -13,7 +13,6 @@
     border-bottom: 5px solid black;
     padding: 5px;
     width: 100%;
-    position: fixed;
 }
 
 .nav-menu a {
@@ -130,6 +129,8 @@ footer {
     @media screen and (max-width: 768px) {
         .nav-menu.responsive {
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
         .nav-menu.responsive.a.icon {
