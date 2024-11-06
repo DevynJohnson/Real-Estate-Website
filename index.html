@@ -5,52 +5,57 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./normalize.css"> <!--CSS Reset-->
+  <link rel="stylesheet" href="style.css"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
-  <script defer type="text/javascript" src="./script.js"></script>
-  <title>Elise Johnson Real Estate</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Icon library for menu bars-->
+    <script defer type="text/javascript" src="./script.js"></script>
+  <title>Elise Johnson Realtor</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html"><b>Home</b></a></li>
-        <li><a href="aboutme.html"><b>About Me</b></a></li>
-        <li><a href="https://www.coldwellbankerhomes.com/mn/woodbury/agent/elise-johnson/aid_277035/listings/"
-            target="_blank"><b>Current Listings</b></a></li>
-        <li><a href="buying.html"><b>Buying</b></a></li>
-        <li><a href="selling.html"><b>Selling</b></a></li>
-        <li><a href="https://www.coldwellbankerhomes.com/mn/woodbury/agent/elise-johnson/aid_277035/"
-            target="_blank"><b>Contact Me</b></a></li>
-      </ul>
+    <nav class="nav-menu" id="myNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="https://www.coldwellbankerhomes.com/mn/woodbury/agent/elise-johnson/aid_277035/listings/"target="blank">Current Listings</a>
+      <a href="buying.html">Buying</a>
+      <a href="selling.html">Selling</a>
+      <a href="https://www.coldwellbankerhomes.com/mn/woodbury/agent/elise-johnson/aid_277035/"target="_blank">Contact Me</a>
+      <a href="" javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
   </header>
 
   <figure class="hero">
     <div class="container">
-    <h1>Elise Johnson, Realtor</h1>
-    <h2>Are you buying or selling your home?<br>Let's work together!</h2>
-    <!-- <h3>Buying or selling a home can be a stressful process if you don't have the right real estate agent. My market expertise, dedication and hard work ethic paried with creativity
+      <h1>Elise Johnson, Realtor<br>
+        Coldwell Banker</h1>
+      <h2>Are you buying or selling your home?<br>Let's work together!</h2>
+      <!-- <h3>Buying or selling a home can be a stressful process if you don't have the right real estate agent. My market expertise, dedication and hard work ethic paried with creativity
        and commitment to you create a positive experience to get you the most money for you home within the timeframe you need. You make the decision to move. <br> Let us handle the rest!</h3> -->
-     <div class="meetYourAgent">
-        <img src="./Images/Meet Your Agent SVG.svg" alt="meet your agent, elise johnson with photo" height="300px" width="300px">
-     </div>
-     </div>
+      <div class="meetYourAgent">
+        <img src="./Images/Meet Your Agent SVG.svg" alt="meet your agent, elise johnson with photo" height="300px"
+          width="300px">
+      </div>
+    </div>
   </figure>
 
   <footer>
-    <ul>
-      <li>Follow me on social media for updates!</li>
-      <li class="socials"><a href="https://www.facebook.com/elisejohnsonrealtor1" target="_blank"><img
-            src="./Images/Facebook Icon Black.svg" alt="link to facebook page" width="20px" height="20px"></a></li>
-      <li class="socials"><a href="https://www.instagram.com/elise_johnson_realtor/" target="_blank"><img
-            src="./Images/Insta icon black.svg" alt="link to instagram profile" width="20px" height="20px"></a></li>
-    </ul>
+      <div class="footerContainer">
+      <p>Follow me on social media for updates!</p>
+      <a href="https://www.facebook.com/elisejohnsonrealtor1" target="_blank" class="socials"><img
+            src="./Images/Facebook Icon Black.svg" alt="link to facebook page" width="20px" height="20px"></a>
+      <a href="https://www.instagram.com/elise_johnson_realtor/" target="_blank" class="socials"><img
+            src="./Images/Insta icon black.svg" alt="link to instagram profile" width="20px" height="20px"></a>
+      </div>
+
   </footer>
 
 </body>
+
 </html>

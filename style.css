@@ -6,34 +6,32 @@
 
 .nav-menu {
     background-color: #e0c173;
+    overflow: hidden;
     color: #000000;
-    list-style: none;
     text-align: center;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     padding: 5px;
     width: 100%;
-    font-size: 0;
     position: fixed;
 }
 
-.nav-menu>li {
-    display: inline-block;
-    padding: 0 25px 0 25px;
-    font-size: 24px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.nav-menu a {
     text-align: center;
-}
-
-.nav-menu>li>a {
     text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 8px;
+    font-family: "Poppins", sans-serif;
     color: #000000;
 }
 
-.nav-menu>li>a:hover {
+.nav-menu a:hover {
     color: white;
+}
+
+.icon {
+    visibility: hidden;
 }
 
 .hero {
@@ -53,8 +51,8 @@
 }
 
 .hero h1 {
-    font-size:40px;
-    background-color:#e0c173;
+    font-size: 40px;
+    background-color: #e0c173;
     border: 5px solid black;
     padding: 10px
 }
@@ -81,7 +79,6 @@
 
 }
 
-.flyer1,
 .stagingtips,
 .dog {
     text-align: center;
@@ -94,39 +91,58 @@ footer {
     color: #000000;
     font-size: 24px;
     border-top: 5px solid #000000;
-    margin: 0;
-    padding: 0;
     width: 100%;
+    padding: 10px
 }
 
-footer ul {
-    text-align: center;
-}
-footer ul li {
-    list-style: none;
-    display: inline;
-    text-align: center;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
+.footerContainer {
+    background-color: #e0c173;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    width: 100%
 }
 
-.socials:hover {
-    color: white;
-}
+
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         background-color: #e0c173;
         width: 100%;
-        justify-content: space-around;
+        justify-content: flex-start;
+        max-height: 150px;
     }
 
-    footer {
-        width: 100%;
+    .nav-menu a {
+        display: none;
+    }
+
+    .nav-menu a.icon {
+        float: right;
+        display: block;
+        visibility: visible;
+    }
+
+    @media screen and (max-width: 768px) {
+        .nav-menu.responsive {
+            position: relative;
+        }
+
+        .nav-menu.responsive.a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    .nav-menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 
 }
