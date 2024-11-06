@@ -124,6 +124,7 @@ footer ul li {
         background-color: #e0c173;
         width: 100%;
         justify-content: space-around;
+        max-height: 150px;
     }
 
 
