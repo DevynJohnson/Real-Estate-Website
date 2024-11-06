@@ -44,6 +44,8 @@
     min-height: 100vh;
     color: black;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     text-align: center;
@@ -55,6 +57,10 @@
     background-color:#e0c173;
     border: 5px solid black;
     padding: 10px
+}
+
+.meetYourAgent {
+    padding: 10px;
 }
 
 .header1 {
