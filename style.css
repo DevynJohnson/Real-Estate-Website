@@ -86,13 +86,12 @@ footer {
   @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        left: -100%;
-        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         background-color: #e0c173;
         width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        justify-content: center;
     }
 }
 
