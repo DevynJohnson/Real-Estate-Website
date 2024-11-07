@@ -18,7 +18,7 @@
 .nav-menu a {
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline;
     font-size: 24px;
     padding: 30px 30px;
     font-family: "Poppins", sans-serif;
