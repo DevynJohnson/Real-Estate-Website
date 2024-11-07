@@ -4,7 +4,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -60,7 +61,7 @@ html, body {
     align-items: flex-start;
     text-align: center;
     padding: 125px;
-    
+
 }
 
 .hero h1 {
@@ -182,9 +183,9 @@ footer {
         /* flex-direction: row; */
         flex-wrap: wrap;
         background-color: #e0c173;
-        width: 100%;
-        justify-content: flex-start;
-        max-height: 150px;
+        justify-content: left;
+        max-height: fit-content;
+
     }
 
     .nav-menu a {
@@ -200,10 +201,11 @@ footer {
     @media screen and (max-width: 768px) {
         .nav-menu.responsive {
             position: relative;
-            display: flex;
-            align-items: left;
-            flex-wrap: wrap;
-            flex: 1;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: left;
+            flex-wrap: nowrap;
+            padding: 0px;
         }
 
         .nav-menu.responsive.a.icon {
@@ -215,9 +217,10 @@ footer {
 
     .nav-menu.responsive a {
         float: none;
-        justify-content: left;
-        display: block;
-        flex-direction: column;
+        display: inline;
+        max-width: 20%;
+        padding: 5px 10px
+        
     }
 
 }
