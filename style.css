@@ -58,28 +58,30 @@
 
 .hero h2 {
     padding: 50px;
-    font-
 }
+
 .meetYourAgent {
     padding: 50px;
 }
 
-.header1 {
+.aboutMeheader {
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-size: 24px
+    font-size: 24px;
+    padding: 25px;
+
 }
 
 .headshot {
     text-align: center;
-    box-shadow: 20px, 20px, #000000
+    padding: 25px;
 }
 
 .aboutme {
     text-align: center;
     font-size: 24px;
     font-family: "Poppins", sans-serif;
-
+    padding: 25px;
 }
 
 .stagingtips,
