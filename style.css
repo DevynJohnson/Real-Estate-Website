@@ -20,7 +20,7 @@ html, body {
     text-align: center;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-    /* padding: 5px; */
+    padding: 5px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -204,7 +204,6 @@ footer {
             align-items: left;
             flex-wrap: wrap;
             flex: 1;
-            /* flex-direction: column; */
         }
 
         .nav-menu.responsive.a.icon {
@@ -217,13 +216,8 @@ footer {
     .nav-menu.responsive a {
         float: none;
         justify-content: left;
+        display: block;
         flex-direction: column;
     }
 
-}
-
-@media screen and (max-width: 525px) {
-    .nav-menu {
-        width: 100%,
-    }
 }
