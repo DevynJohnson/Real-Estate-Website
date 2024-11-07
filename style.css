@@ -177,14 +177,18 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
+   .hero {
+    max-width: fit-content;
+   }
+
     .nav-menu {
         /* position: fixed; */
         display: flex;
         /* flex-direction: row; */
         flex-wrap: wrap;
         background-color: #e0c173;
-        justify-content: left;
-        max-height: fit-content;
+        justify-content: space-between;
+        max-height: 100%;
 
     }
 
@@ -219,8 +223,23 @@ footer {
         float: none;
         display: inline;
         max-width: 20%;
-        padding: 5px 10px
+        padding: 5px 10px;
         
     }
 
 }
+
+@media screen and (max-width: 480px) {
+    html,
+    body {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: scroll;
+    }
+
+    .nav-menu, {
+        min-width: fit-content;
+        overflow-x: scroll;
+}
+} 
