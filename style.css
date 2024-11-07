@@ -46,7 +46,8 @@
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    padding: 50px;
+    padding: 125px;
+    
 }
 
 .hero h1 {
@@ -186,7 +187,8 @@ footer {
         .nav-menu.responsive {
             position: relative;
             display: flex;
-            flex-direction: column;
+            justify-content: flex-start;
+            flex-wrap: wrap;
         }
 
         .nav-menu.responsive.a.icon {
