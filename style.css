@@ -163,9 +163,9 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
-        position: fixed;
+        /* position: fixed; */
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         flex-wrap: wrap;
         background-color: #e0c173;
         width: 100%;
@@ -187,8 +187,9 @@ footer {
         .nav-menu.responsive {
             position: relative;
             display: flex;
-            justify-content: flex-start;
+            align-items: left;
             flex-wrap: wrap;
+            /* flex-direction: column; */
         }
 
         .nav-menu.responsive.a.icon {
