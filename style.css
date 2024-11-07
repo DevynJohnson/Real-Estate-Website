@@ -84,8 +84,58 @@
     padding: 25px;
 }
 
-.stagingtips,
-.dog {
+.buyingBackground {
+    background-image: url(./Images/Background\ 3\ Steps\ For\ Offer\ v2.svg);
+    background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buyingBackground h1 {
+    background-color: #e0c173;
+    color: black;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.buyingBackground h2 {
+    float: left;
+}
+
+.buyingHeader {
+    text-align: center;
+    flex-basis: 200%;
+    padding: 10px;
+}
+
+.flexContainer {
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: #e0c173;
+    margin: 20px;
+    max-width: 35%;
+    padding: 10px;
+}
+
+.buyingBackground h1:hover,
+.flexContainer:hover {
+    background-color: white;
+    color: black;
+}
+
+.flexContainer p {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    width: fit-content;
+    line-height: 50px;
+}
+
+.stagingtips {
     text-align: center;
     width: 100%;
 }
