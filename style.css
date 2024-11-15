@@ -43,6 +43,17 @@ body {
     color: white;
 }
 
+.instaContainer {
+    height: 100%;
+    width: 100%;
+}
+
+#instaEmbed {
+    line-height: 0;
+    margin: 0;
+    padding-bottom: 0;
+}
+
 .icon {
     visibility: hidden;
 }
@@ -68,7 +79,7 @@ body {
     font-size: 40px;
     background-color: #e0c173;
     border: 5px solid black;
-    padding: 10px
+    padding: 10px;
 }
 
 .hero h2 {
@@ -77,15 +88,9 @@ body {
 
 .meetYourAgent {
     padding: 50px;
-}
-
-.aboutMeheader {
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    padding: 25px;
-
 }
+
 
 .headshot {
     text-align: center;
