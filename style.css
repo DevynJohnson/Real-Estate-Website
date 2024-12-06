@@ -10,11 +10,6 @@
     min-height: 100vh;
 }
 
-.headshot {
-    text-align: center;
-    padding: 25px;
-}
-
 .buyingBackground {
     background-image: url(./Images/Background\ 3\ Steps\ For\ Offer\ v2.svg);
     background-size: cover;
