@@ -13,7 +13,7 @@ This application is designed to be viewed in a web browser.
 Can be viwed using a web browser at <a href="https://www.elisejohnsonrealtor.com/">https://www.elisejohnsonrealtor.com/</a>.
 
 ## Contributers
-<p>Devyn Johnson <a href="https://github.com/DevynJohnson>Github</a> | <a href="www.linkedin.com/in/devyn-johnson-a5259213b>LinkedIn</a> | <a href="https://devynjohnson.github.io/online-portfolio/">Portfolio</a></p>
+<p>Devyn Johnson <a href="https://github.com/DevynJohnson">Github</a> | <a href="www.linkedin.com/in/devyn-johnson-a5259213b>LinkedIn</a> | <a href="https://devynjohnson.github.io/online-portfolio/">Portfolio</a></p>
 
 ## License
 
