@@ -10,21 +10,8 @@
     min-height: 100vh;
 }
 
-.meetYourAgent {
-    padding: 50px;
-    text-align: center;
-}
-
-
 .headshot {
     text-align: center;
-    padding: 25px;
-}
-
-.aboutme {
-    text-align: center;
-    font-size: 24px;
-    font-family: "Poppins", sans-serif;
     padding: 25px;
 }
 
