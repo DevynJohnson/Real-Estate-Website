@@ -10,11 +10,11 @@ This application is designed to be viewed in a web browser.
 
 ## Usage
 
-Can be viwed using a web browser at <a href="https://www.elisejohnsonrealtor.com/">https://www.elisejohnsonrealtor.com/</a>.
+Can be viewed using a web browser at <a href="https://www.elisejohnsonrealtor.com/">https://www.elisejohnsonrealtor.com/</a>.
 
 ## Contributers
 <p>Devyn Johnson <a href="https://github.com/DevynJohnson">Github</a> | <a href="www.linkedin.com/in/devyn-johnson-a5259213b">LinkedIn</a> | <a href="https://devynjohnson.github.io/online-portfolio/">Portfolio</a></p>
 
 ## License
 
-MIT License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
