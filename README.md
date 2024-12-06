@@ -2,15 +2,18 @@
 
 ## Description
 
-A project undertaken to practice beginner coding skills by creating a website for my wife's real estate business. I aim to practice creating HTML content, linking an external CSS style sheet, and using JavaScript to make the webpage interactive for the end-user.
+An informational website created for Elise Johnson, a Coldwell Banker realtor operating in Minnesota and Wisconsin to allow clients the opportunity to learn more about her, see her current listings, and get helpful information about buying or selling their home.
 
 ## Installation
 
-N/A; this project is designed to be deployed as a webpage.
+This application is designed to be viewed in a web browser.
 
 ## Usage
 
-This application is designed to be viewed in a web browser.
+Can be viwed using a web browser at <a href="https://www.elisejohnsonrealtor.com/">https://www.elisejohnsonrealtor.com/</a>.
+
+## Contributers
+<p>Devyn Johnson <a href="https://github.com/DevynJohnson>Github</a> | <a href="www.linkedin.com/in/devyn-johnson-a5259213b>LinkedIn</a> | <a href="https://devynjohnson.github.io/online-portfolio/">Portfolio</a></p>
 
 ## License
 
