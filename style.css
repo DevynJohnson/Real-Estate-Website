@@ -2,6 +2,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+.bottom-border {
+    border-bottom: 5px solid black;
+}
+
 .icon {
     visibility: hidden;
 }
