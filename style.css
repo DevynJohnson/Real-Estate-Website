@@ -6,10 +6,6 @@
     border-bottom: 5px solid black;
 }
 
-.icon {
-    visibility: hidden;
-}
-
 .hero {
     width: 100%;
     background-image: url(./Images/Key\ in\ door.jpg);
