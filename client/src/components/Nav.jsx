@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import AuthService from "../utils/AuthService"; // Ensure this path is correct
+import AuthService from "../utils/auth"; // Ensure this path is correct
 
 const NavTabs = () => {
   const currentPage = useLocation().pathname;

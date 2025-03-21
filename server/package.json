@@ -2,10 +2,11 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
+  "type": "module",
   "scripts": {
     "build": "npx tsc",
-    "start": "npm run build && node dist/server.js --ignore client",
+    "start": "npm run build && node server.js --ignore client",
     "dev": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
