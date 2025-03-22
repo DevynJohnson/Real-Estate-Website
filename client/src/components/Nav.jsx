@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import AuthService from "../utils/auth";
-import CB_logo from '../assets/Images/CB_logo_no_background.png';
+import CB_logo from "/assets/Images/CB_logo_no_background.png";
 
 const NavTabs = () => {
   const currentPage = useLocation().pathname;
