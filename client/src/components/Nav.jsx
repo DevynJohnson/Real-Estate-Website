@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import AuthService from "../utils/auth";
-import CB_logo from "/assets/Images/CB_logo_no_background.png";
+// import CB_logo from "/assets/Images/CB_logo_no_background.png";
 
 const NavTabs = () => {
   const currentPage = useLocation().pathname;
@@ -17,7 +17,6 @@ const NavTabs = () => {
       <Container>
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           Elise Johnson Realtor
-          <a href="https://www.coldwellbankerhomes.com/mn/woodbury/agent/elise-johnson/aid_277035/"target="_blank"><img src={CB_logo} height="80" width="80" className="ms-2" /></a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNav" />
         <Navbar.Collapse id="navbarNav">
