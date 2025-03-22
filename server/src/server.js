@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import connectToDatabase from './config/connection.js'; // Import the connection function
+import userRoutes from './routes/user-routes.js'; // Import the user routes
 
 dotenv.config(); // Load environment variables
 
@@ -21,16 +22,20 @@ connectToDatabase(); // Establish the connection
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: 'https://www.elisejohnsonrealtor.com/',
+  origin: ["http://localhost:5173", "https://www.elisejohnsonrealtor.com/"],
   credentials: true,
 }));
 
-// Serve static frontend files from the 'client' folder (for development)
-app.use(express.static(path.join(__dirname, '../client')));
+// Serve static frontend files (since index.html is directly inside the 'client' folder)
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client')));  // Serving the 'client' folder
+  app.get('*', (_req, res) => {
+    res.sendFile(path.join(__dirname, '../client', 'index.html')); // Serve index.html from 'client'
+  });
+}
 
-// Set up routes
-import routes from './routes/user-routes.js';
-app.use(routes);
+app.use('/api/users', userRoutes);
+
 
 // Fallback route for all other requests to send the React app's index.html
 app.get('*', (_req, res) => {

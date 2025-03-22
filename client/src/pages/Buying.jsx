@@ -1,7 +1,7 @@
 import BackgroundImage from "../assets/Images/Background_3_Steps_For_Offer_v2.svg";
 import LoanStockPhoto from "../assets/Images/LoanStockPhoto.svg";
 import Neighborhood from "../assets/Images/Neighborhood.svg";
-import MeetYourAgentSVG from "../assets/Images/Meet Your Agent SVG.svg";
+import MeetYourAgentSVG from "../assets/Images/meet_your_agent.svg";
 
 const buyingTips = [
   {

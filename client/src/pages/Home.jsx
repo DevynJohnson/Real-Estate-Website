@@ -1,7 +1,7 @@
 import EliseLogo from "../assets/Images/Elise Logo SVG Gold.svg";
 const Home = () => {
     return (
-        <main>
+        <main className="homePage">
         <figure className="hero d-flex align-items-center">
           <div className="card border-dark mx-left m-5" style={{ width: "30rem" }}>
             <img src={EliseLogo} className="card-img-top" alt="headshot" />

@@ -7,6 +7,7 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate(); // Use this to navigate after signup
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,30 +20,28 @@ const Signup = () => {
     }
 
     try {
-      const response = await fetch('/api/users/signup', {
+      const response = await fetch(`${API_BASE_URL}/users/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email, password }),
       });
-
-      const data = await response.json();
-
+   
+      const data = await response.json().catch(() => ({})); // Avoid JSON parsing errors
+   
       if (response.ok) {
-        // Successful signup, store the token and navigate to the home page
-        localStorage.setItem('id_token', data.token); // Store the token in localStorage
+        localStorage.setItem('id_token', data.token); 
         console.log('Signup successful', data);
-        navigate('/'); // Redirect to home page after signup
+        navigate('/'); 
       } else {
-        // Show error message
-        setError(data.message || 'Something went wrong during signup');
+        setError(data.message || 'Signup failed. Please try again.');
       }
     } catch (error) {
-      console.error('Error signing up:', error);
-      setError('An error occurred while signing up. Please try again later.');
+      console.error('Signup error:', error);
+      setError('Server is unreachable. Please try again later.');
     }
-  };
+  }
 
   return (
     <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
@@ -75,7 +74,7 @@ const Signup = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" block>
+            <Button variant="primary" type="submit">
               Sign Up
             </Button>
           </Form>
