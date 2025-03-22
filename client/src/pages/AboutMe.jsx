@@ -1,12 +1,13 @@
+import MeetYourAgentSVG from "../assets/Images/meet_your_agent.svg";
 const AboutMe = () => {
   return (
     <main className="d-flex justify-content-center">
-      <div className="meetYourAgent card w-100">
+      <div className="meetYourAgent card w-100 text-center">
         <img 
-          src="../assets/Images/Meet Your Agent SVG.svg" 
-          className="card-img-top" 
+          src={MeetYourAgentSVG} 
+          className="card-img-top mx-auto" 
           alt="Photo of Elise Johnson" 
-          style={{ height: "400px", width: "400px" }} 
+          style={{ height: "400px", width: "400px", }} 
         />
         <div className="card-body text-center">
           <p className="card-text lead">
