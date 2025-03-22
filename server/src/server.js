@@ -28,9 +28,9 @@ app.use(cors({
 
 // Serve static frontend files (since index.html is directly inside the 'client' folder)
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../../client')));  // Serving the 'client' folder
+  app.use(express.static(path.join(__dirname, '../../client/dist')));  // Serving the 'client' folder
   app.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname, '../../client', 'index.html')); // Serve index.html from 'client'
+    res.sendFile(path.join(__dirname, '../../client/dist', 'index.html')); // Serve index.html from 'client'
   });
 }
 
@@ -39,7 +39,7 @@ app.use('/api/users', userRoutes);
 
 // Fallback route for all other requests to send the React app's index.html
 app.get('*', (_req, res) => {
-  res.sendFile(path.join(__dirname, '../../client', 'index.html'));
+  res.sendFile(path.join(__dirname, '../../client/dist', 'index.html'));
 });
 
 // Start the server once the database is connected
