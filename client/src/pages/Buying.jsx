@@ -28,14 +28,22 @@ const Buying = () => {
         <img src={BackgroundImage} className="card-img" alt="Background Image" />
         <div className="card-img-overlay">
           <div className="card bg-dark text-white mb-3">
-            <h1 className="card-title text-center">3 Tips Before Making An Offer On A Property</h1>
+            <h1 className="card-title text-center">
+              3 Tips Before Making An Offer On A Property
+            </h1>
           </div>
-          <div className="row d-flex justify-content-around align-items-center">
+          <div className="row">
             {buyingTips.map((tip, index) => (
-              <div key={index} className="card bg-light text-dark mb-3 col-3 border-dark">
-                <div className="card-body">
-                  <img src={tip.img} className="card-img-top fixed-size mb-3" alt={tip.alt} />
-                  <h4 className="card-text text-center">{tip.text}</h4>
+              <div key={index} className="col-12 col-md-4 mb-3">
+                <div className="card bg-light text-dark border-dark h-100">
+                  <div className="card-body d-flex flex-column align-items-center">
+                    <img
+                      src={tip.img}
+                      className="card-img-top mb-3 img-fluid"
+                      alt={tip.alt}
+                    />
+                    <h4 className="card-text text-center">{tip.text}</h4>
+                  </div>
                 </div>
               </div>
             ))}
