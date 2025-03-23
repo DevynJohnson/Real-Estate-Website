@@ -25,8 +25,8 @@ const NavTabs = () => {
             <Nav.Link as={Link} to="/aboutMe" active={currentPage === "/aboutMe"}>About Me</Nav.Link>
             <Nav.Link as={Link} to="/buying" active={currentPage === "/buying"}>Buying</Nav.Link>
             <Nav.Link as={Link} to="/selling" active={currentPage === "/selling"}>Selling</Nav.Link>
-            <Nav.Link href="https://www.coldwellbankerhomes.com/mn/woodbury/agent/elise-johnson/aid_277035/listings/" target="_blank">
-              My Current Listings
+            <Nav.Link><a href="https://www.coldwellbankerhomes.com/mn/woodbury/agent/elise-johnson/aid_277035/listings"target="_blank">
+              My Current Listings</a>
             </Nav.Link>
             <Nav.Link><a href="https://www.coldwellbankerhomes.com/minnesota/"target="_blank">Find Your Next Home</a></Nav.Link>
             <Nav.Link href="https://www.coldwellbankerhomes.com/mn/woodbury/agent/elise-johnson/aid_277035/" target="_blank">
