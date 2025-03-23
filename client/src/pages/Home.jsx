@@ -1,6 +1,6 @@
 import EliseLogo from "../assets/Images/Elise Logo SVG Gold.svg";
 import keysInDoor from "../assets/Images/Key in door.jpg";
-import CB_Logo from "../assets/Images/CB_logo_no_background.png";
+import CB_Logo from "../assets/Images/CB_Logo_no_background.png";
 const Home = () => {
     return (
       <main className="homePage" style={{backgroundImage: `url(${keysInDoor})`, backgroundSize: "cover", backgroundPosition: "center"}}>
