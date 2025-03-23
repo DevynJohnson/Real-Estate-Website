@@ -1,20 +1,23 @@
 import EliseLogo from "../assets/Images/Elise Logo SVG Gold.svg";
+import keysInDoor from "../assets/Images/Key in door.jpg";
+import CB_Logo from "../assets/Images/CB_logo_no_background.png";
 const Home = () => {
     return (
-        <main className="homePage">
-        <figure className="hero d-flex align-items-center">
-          <div className="card border-dark mx-left m-5" style={{ width: "30rem" }}>
-            <img src={EliseLogo} className="card-img-top" alt="headshot" />
-            <div className="card-body text-center">
-              <h1 className="card-text">Elise Johnson, Realtor</h1>
-              <br />
-              <h3><a href="https://www.coldwellbanker.com/" target="_blank">Coldwell Banker</a></h3>
-                <br />
-                <p className="fw-bold lead">Are you buying or selling a home? Let's work together!</p>
-            </div>
-          </div>
-        </figure>
-        </main>
+      <main className="homePage" style={{backgroundImage: `url(${keysInDoor})`, backgroundSize: "cover", backgroundPosition: "center"}}>
+      <figure className="hero d-flex align-items-center" style={{ height: "100vh" }}>
+        <div className="card border-dark" style={{ width: "25rem", marginLeft: "2rem" }}>
+        <img src={EliseLogo} className="card-img-top mx-auto d-block" alt="elise johnson realtor logo" style={{width: "75%", border: "solid black 5px"}} />
+        <div className="card-body text-center">
+          <h3 className="card-text">Elise Johnson</h3>
+          <h4>Licensed Real State Agent</h4>
+          <br />
+          <a href="https://www.coldwellbanker.com/" target="_blank">
+          <img src={CB_Logo} className="mx-auto d-block" style={{ width: "50%" }}/>
+          </a>
+        </div>
+        </div>
+      </figure>
+      </main>
     );
     }
 
