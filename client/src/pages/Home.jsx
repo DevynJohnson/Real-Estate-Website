@@ -4,7 +4,7 @@ import CB_Logo from "../assets/Images/CB_Logo_no_background.png";
 const Home = () => {
     return (
       <main className="homePage" style={{backgroundImage: `url(${keysInDoor})`, backgroundSize: "cover", backgroundPosition: "center"}}>
-      <figure className="hero d-flex align-items-center" style={{ height: "100vh" }}>
+      <figure className="hero d-flex align-items-center" style={{ paddingTop: "2rem", paddingBottom: "2rem"}}>
         <div className="card border-dark" style={{ width: "25rem", marginLeft: "2rem" }}>
         <img src={EliseLogo} className="card-img-top mx-auto d-block" alt="elise johnson realtor logo" style={{width: "75%", border: "solid black 5px"}} />
         <div className="card-body text-center">

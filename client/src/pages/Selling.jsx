@@ -5,7 +5,7 @@ const Selling = () => {
   return (
     <div>
       <div className="stagingtips">
-        <img src={StagingTips} alt="Staging Tips" width="1352" height="1750" />
+        <img src={StagingTips} alt="Staging Tips" width="auto" height="auto" />
       </div>
     </div>
   );
