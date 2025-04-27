@@ -1,16 +1,16 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import AuthService from "../utils/auth";
+// import AuthService from "../utils/auth";
 // import CB_logo from "/assets/Images/CB_logo_no_background.png";
 
 const NavTabs = () => {
   const currentPage = useLocation().pathname;
-  const user = AuthService.getProfile();
+  // const user = AuthService.getProfile();
 
-  const handleLogout = () => {
-    AuthService.logout();
-  };
+  // const handleLogout = () => {
+  //   AuthService.logout();
+  // };
 
   return (
     <Navbar bg="light" expand="md">
@@ -32,11 +32,11 @@ const NavTabs = () => {
             <Nav.Link href="https://www.coldwellbankerhomes.com/mn/woodbury/agent/elise-johnson/aid_277035/" target="_blank">
               Contact Me
             </Nav.Link>
-            {!user ? (
+            {/* {!user ? (
               <Nav.Link as={Link} to="/login" active={currentPage === "/login"}>Login/Register</Nav.Link>
             ) : (
               <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
-            )}
+            )} */}
           </Nav>
         </Navbar.Collapse>
       </Container>
